@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.didact.u3_dialogejercicio1.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombrefinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <TextView
+            android:id="@+id/tvEdadfinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad" />
+
+        <TextView
+            android:id="@+id/tvEstudiosfinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudios" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickAnterior"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSiguiente"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Año de nacimiento" />
+
+        <Spinner
+            android:id="@+id/spAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudios" />
+
+        <ListView
+            android:id="@+id/lvEstudios"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/tvEstudiosres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudios:" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbAcepta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acepta los términos" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickComprobar"
+        android:text="Comprobar" />
+</LinearLayout>
